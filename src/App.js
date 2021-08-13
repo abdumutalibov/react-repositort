@@ -5,8 +5,8 @@ class Index extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            selected:null,
             title: 'a',
+            selected:null,
             data: [
                 {id: 1, name: 'Jumabek', status:'почталиoн'},
                 {id: 2, name: 'Bekzod', status:'уборшик'},
@@ -63,9 +63,19 @@ const onChangeName =(e)=>{
 const onChangeStatus =(e)=>{
     this.setState({editstatus: e.target.value});
 }
-const onSave=()=>{
-    this.setState({selected:null})
-}
+const onSave =(id)=>{
+    console.log(id);
+    const newData = this.state.data.map((value)=>{
+        return value.id !==id
+        ? value
+        : {
+            ...value,
+            name: this.state.editname,
+            status: this.state.editstatus,
+        }
+    });
+    this.setState({selected:null, data: newData})
+};
       
         return(  
         <div className='main'>
@@ -86,7 +96,7 @@ const onSave=()=>{
                 <tbody>
             { this.state.data.map(({id,name,status   } ,index)=>{
                 return(
-
+ 
                   <tr key={index}>
 
                     <td>
@@ -95,6 +105,7 @@ const onSave=()=>{
                     <td>
                    {this.state.selected ===id ?(      
                     <input
+                    autoComplete='off'
                     onChange={onChangeName}       
                   disabled={this.state.selected!==id}
                      type='text'
@@ -109,9 +120,10 @@ const onSave=()=>{
                     <td>
                         {this.state.selected ===id?(
                     <input
+                    autoComplete='off'
                  onChange={onChangeStatus}
                      disabled={this.state.selected !==id}
-                      type='text' 
+                    required  type='text' 
                       value={this.state.editstatus}/>
                       ):(
                           <div>{status}</div>
@@ -121,8 +133,17 @@ const onSave=()=>{
                     
 
                     <td><button onClick={()=>onDelete(id)}>delete</button></td>
-                    <td><button onClick={()=>this.state.selected===id ? onSave():onEdit(id,name ,status)}>
-                        {this.state.selected === id? 'svee':'edit'}
+                    <td>
+                        <button onClick={()=>this.state.selected === id ? onSave(id)
+                    :onEdit(id,name ,status)}
+                    disabled={
+                        this.state.selected === id &&
+                        (this.state.editname.length <=0 ||
+                            this.state.editstatus.length<=0)
+                    }
+                    
+                    >
+                        {this.state.selected === id? 'save':'edit'}
                     </button></td>
 
                   </tr>
