@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Figma from './Figma/Sidebar'
+import App from './Table/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Figma />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
