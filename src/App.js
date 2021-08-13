@@ -5,6 +5,7 @@ class Index extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            selected:null,
             title: 'a',
             data: [
                 {id: 1, name: 'Jumabek', status:'почталиoн'},
@@ -15,7 +16,9 @@ class Index extends React.Component {
                 
             ],
             name: '',
-            status: ''
+            status: '',
+            editname:'',
+            editstatus:''
         };
     }
 
@@ -27,12 +30,7 @@ class Index extends React.Component {
             this.setState({data: newData})
         }
         const add = ()=> {
-        //     console.log('added');
-        //    const data = {
-        //        name: this.state.name,
-        //      status: this.state.status,
-        //     id: this.state.data.length + 1,
-        // }
+    
          const newData = [
              ...this.state.data, 
              {
@@ -53,8 +51,24 @@ const onName =(e)=>{
 const onStatus =(e)=>{
     this.setState({status: e.target.value});
 }
+///======================================================
+const onEdit=(id,name , status)=>{
+console.log(id);
+this.setState({selected:id,editname:name, editstatus:status})
+
+}
+const onChangeName =(e)=>{
+    this.setState({editname: e.target.value});
+}
+const onChangeStatus =(e)=>{
+    this.setState({editstatus: e.target.value});
+}
+const onSave=()=>{
+    this.setState({selected:null})
+}
       
-        return(  <div className='main'>
+        return(  
+        <div className='main'>
 <input value={this.state.name} onChange={onName} placeholder='name' type='text'></input>
 <input value={this.state.status} onChange={onStatus} placeholder='status' type='text'></input>
 <button onClick={add}>Add</button>
@@ -76,14 +90,40 @@ const onStatus =(e)=>{
                   <tr key={index}>
 
                     <td>
-                        <input type='text' value={id}/>
+                        {id}
                     </td>
                     <td>
-                    <input type='text' value={name}/>
+                   {this.state.selected ===id ?(      
+                    <input
+                    onChange={onChangeName}       
+                  disabled={this.state.selected!==id}
+                     type='text'
+                     value={this.state.editname}
+                     />
+                   ):(
+                       <div>{name}</div>
+                   )}
+                   
                     </td>
-                    <td>{status}</td>
-                    <td><button onClick={()=>onDelete(id)}>delete{id}</button></td>
-                    <td><button>edit{id}</button></td>
+
+                    <td>
+                        {this.state.selected ===id?(
+                    <input
+                 onChange={onChangeStatus}
+                     disabled={this.state.selected !==id}
+                      type='text' 
+                      value={this.state.editstatus}/>
+                      ):(
+                          <div>{status}</div>
+                      )}
+                    </td>
+
+                    
+
+                    <td><button onClick={()=>onDelete(id)}>delete</button></td>
+                    <td><button onClick={()=>this.state.selected===id ? onSave():onEdit(id,name ,status)}>
+                        {this.state.selected === id? 'svee':'edit'}
+                    </button></td>
 
                   </tr>
                 )

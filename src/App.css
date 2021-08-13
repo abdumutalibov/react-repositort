@@ -9,9 +9,14 @@
 table{
   border-collapse:collapse ;
 }
-tr{
-  padding: 1rem;
+
+
+input{
+  width: 100px;
+  border: 1px solid red;
 }
-td,th{
-  padding: 1rem;
+input:disabled{
+  border: none;
+ 
 }
+ 
