@@ -1,0 +1,6 @@
+.menu-con{
+    display: flex;
+    flex: 5;
+    border: 1px solid blue;
+}
+
