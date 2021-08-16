@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { data } from '../mock';
-import './menu.css'
+import './Menu.css'
 import Order from '../Order';
 // import {data } from '../mock'
 
@@ -14,17 +14,19 @@ export default class Menu extends Component {
         }
     }
     render() {
-        const onselect = (item)=>{
-            const selected = [...this.state.selected, item]
-            this.setState({selected})  
+        const onselect = (value)=>{
+            const selected =[...this.state.selected,{... value, id:this.state.selected.length+1}]
+            this.setState({selected})
             selected.forEach(item=>{
-                this.setState({total:this.state.total + item.price})
+                this.setState({total: this.state.total+item.price})
             })
         }
+const onDelete =(id)=>{
+    const newData = this.state.selected.filter(value=>value.id !==id)
+    this.setState({selected:newData})
+}
 
-        const onDelete=(id)=>{
-            console.log(id, 'select');
-        }
+    
 
         return (
             <div className='menu-con'>

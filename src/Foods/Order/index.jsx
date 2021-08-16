@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { data } from '../mock';
-import './order.css'
+import './Order.css'
 // import {data } from '../mock'
 
 export default class Order extends Component {
