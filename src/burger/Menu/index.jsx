@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import { data } from '../mock';
-import './menu.css'
-import Order from '../Order';
-// import {data } from '../mock'
+import React, { Component } from 'react'
+import './Menu.css'
+import {data} from '../../Foods/mock'
+import Order from '../Order'
 
-export default class Menu extends Component {
+
+export default class menu extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -32,7 +32,7 @@ export default class Menu extends Component {
                     {this.state.lists.map((value)=>{
                      return(
                  <div>
-                 <h1 className='h1'>{value.catrgory}</h1>
+                 <h1>{value.category}</h1>
                   <div className='list'>
                      {
                  value?.list.map((item)=>{
@@ -58,5 +58,3 @@ export default class Menu extends Component {
         )
     }
 }
-
-   

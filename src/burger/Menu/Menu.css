@@ -1,15 +1,12 @@
 .menu-con {
     display: flex;
-    flex: 1;
+    flex: 5;
     border: 1px solid blue;
 }
 
 .category {
     display: flex;
     flex-direction: column;
-}
-.h1{
-    font-size: 40px;
 }
 
 .list {

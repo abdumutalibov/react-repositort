@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
-import { data } from '../mock';
-import './order.css'
-// import {data } from '../mock'
+import React, { Component } from 'react'
+import './Order.css'
+import {data} from '../../Foods/mock'
 
-export default class Order extends Component {
+export default class order extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -33,3 +32,4 @@ export default class Order extends Component {
         )
     }
 }
+

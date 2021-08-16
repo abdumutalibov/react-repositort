@@ -1,6 +1,6 @@
 .order-con {
     display: flex;
-    flex: 3;
+    flex: 2;
     flex-direction: column;
     border: 1px solid red;
 }
@@ -8,6 +8,5 @@
 .total {
     display: flex;
     margin-top: 100px;  
-    width: 300px;
 }
 

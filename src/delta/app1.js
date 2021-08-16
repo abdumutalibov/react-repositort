@@ -48,3 +48,39 @@ class Item extends Component {
 export default Item; 
  
  
+// export default class Menu extends Component{
+//   constructor(props){
+//       super(props);
+//           this.state={
+//               lists:data,
+//           }
+//       }
+  
+//   render() {
+//       return(
+//        <div className='menu-con'> 
+//         <div className='category'>
+//           {this.state.lists.map((value)=>{
+//               return (
+//               <div>
+//                   <h1>{value.catrgory}</h1>
+//                   <div className='list'>
+//                       {
+//                           value?.list.map((item)=>{
+//                               return(
+//                                   <div className ='list-item'>
+//                                      <h1>{item.title}</h1> 
+//                                       </div>
+//                               )
+//                           })
+//                       }
+//                   </div>
+//               </div>
+//               );
+//           })}
+//       </div>
+//       </div> 
+//       );
+//   }
+// }
+ 

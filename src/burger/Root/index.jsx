@@ -1,8 +1,10 @@
 import React from 'react';
-import './style.css'
-import Menu from '../Menu'
-import Order from '../Order'
+import './style.css';
 
+// import Order from '../Order';
+import Menu from '../Menu';
+import Order from '../Order';
+import {data} from '../../Foods/mock'
 class index extends React.Component {
     constructor(props) {
         super(props);
@@ -11,7 +13,7 @@ class index extends React.Component {
 
     render() {
         return (
-            <>
+                <>
                 
                        <h1>Lotteria</h1>
                     <div className='cont'>
@@ -25,7 +27,6 @@ class index extends React.Component {
         );
     }
 }
-
 
 
 export default index;
