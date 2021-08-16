@@ -79,6 +79,7 @@ const onSave =(id)=>{
       
         return(  
         <div className='main'>
+            <input></input>
 <input value={this.state.name} onChange={onName} placeholder='name' type='text'></input>
 <input value={this.state.status} onChange={onStatus} placeholder='status' type='text'></input>
 <button onClick={add}>Add</button>

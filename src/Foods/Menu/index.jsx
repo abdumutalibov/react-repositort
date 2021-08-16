@@ -15,7 +15,7 @@ export default class Menu extends Component {
     }
     render() {
         const onselect = (value)=>{
-            const selected =[...this.state.selected,{... value, id:this.state.selected.length+1}]
+            const selected =[...this.state.selected,{...value, id:this.state.selected.length+1}]
             this.setState({selected})
             selected.forEach(item=>{
                 this.setState({total: this.state.total+item.price})

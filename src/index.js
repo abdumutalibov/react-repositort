@@ -5,7 +5,8 @@ import './index.css';
 // import App from './Table/App';
 // import Delta from './delta/app1'
 // import App from './Root'
-import App from './Foods/Root'
+// import App from './Foods/Root'
+import App from './Test'
 ReactDOM.render(
   <React.StrictMode>
     <App />

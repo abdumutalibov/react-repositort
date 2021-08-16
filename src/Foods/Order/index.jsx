@@ -11,14 +11,8 @@ export default class Order extends Component {
         }
     }
     render() {
-       const pressDelete = (id) => {
-            let users = this.state.users.filter((u,index)=>{
-                return index !== id;
-            });
-            this.setState({
-                users
-            });
-          }
+
+     
 
 
         const onDelete=(id)=>{
@@ -40,10 +34,10 @@ export default class Order extends Component {
                             <h1>{value.title}</h1>
                             <h3>{value.price}</h3>
                             
-                            {/* <button onClick={()=>this.state.onDelete(value.id)}>delete</button> */}
+                            <button onClick={()=>this.props.onDelete(value.id)}>delete</button>
 
 
-                              <button onClick={()=>pressDelete(this.props.id)}>delete</button>
+                              {/* <button onClick={()=>pressDelete(this.props.id)}>delete</button> */}
                         </div>  
                         ))}
                     </div>
