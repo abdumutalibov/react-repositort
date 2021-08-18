@@ -3,11 +3,17 @@ import MaterialTable from 'material-table'
 
 export const Table=()=>{
     const data=[
-        {id: 1, name: 'Valibek', status:'Haydovchi'},
-            {id: 2, name: 'Alesh', status:'Sotuvchi'},
-            {id: 3, name: 'Jumabek', status:'O`quvchi'},
-            {id: 4, name: 'Gulxan', status:'kassir'},
-            {id: 5, name: 'Vasiya', status:'Quruvchi'},
+        {id:1, grade:100, title:'pdp'},
+        {id:2, grade:50, title:'it'},
+        {id:3, grade:40, title:'java'},
+        {id:4, grade:87, title:'it'},
+        {id:5, grade:70, title:'ultra'},
+        {id:5, grade:70, title:'it'},
+        {id:5, grade:92, title:'c++'},
+        {id:5, grade:70, title:'php'},
+        {id:5, grade:90, title:'it'},
+        {id:5, grade:70, title:'consumer'},
+        {id:5, grade:81, title:'pyhon'},
     ]
     const columns=[
         {
@@ -15,11 +21,11 @@ export const Table=()=>{
         },
 
         {
-            title:'Name', field:'name'
+            title:'Grade', field:'grade'
         },
 
         {
-            title:'Status',field:'status'
+            title:'Title',field:'title'
         }
     ]
     return(<div className='div'>
@@ -28,10 +34,10 @@ export const Table=()=>{
         data={data}
         columns={columns}
         options={{
-            search:false,
+            // search:false,
             paging:false,
-            filtering:true,
-            exportButton:true
+            // filtering:true,
+            // exportButton:true
         }}
       />
     </div>)
