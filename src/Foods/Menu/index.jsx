@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { data } from '../mock';
-import './Menu.css'
+import './menu.css'
 import Order from '../Order';
 // import {data } from '../mock'
 

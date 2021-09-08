@@ -1,0 +1,82 @@
+.navbar{
+    border: 1px solid red;
+    /* width: 1800px;
+     */
+     position: relative;
+     padding: 166px 99px;
+}
+.logo-wrapper{
+    bottom: 100px;
+    /* display: flex; */
+    width: 37px;
+height: 45px;
+align-items: center;
+}
+.logo-title{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 52px;
+padding-left: 10px;
+/* identical to box height */
+/* display: flex; */
+position: relative;
+color: #58A9A5;
+
+}
+.a:hover{
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    /* identical to box height */
+    
+    color: #58A9A5;
+    
+    
+
+}
+ul{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+text-align: center;  
+flex-direction: row; 
+align-items: center;
+ /* position: absolute; */
+right: 500px;
+    text-align: center;
+    margin-left: 100px;
+  }
+  ul>li{
+    list-style: none;
+    float: left;
+    position: relative;
+  }
+  ul>li>a{
+    text-decoration: none;
+  padding-left: 35px;
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+  color: #404242;
+  }
+  .up{
+      position: relative;
+right: -160px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 500px;
+height: 50px;
+  }
+
+  .Main{
+    background-color: white;
+width: 2100px;
+height: 100%;
+  }
