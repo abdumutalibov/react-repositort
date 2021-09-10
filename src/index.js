@@ -14,13 +14,14 @@ import Root from './Figma2/Navbar';
 // import App from './Project'
 // import App from './Project1'
 // import App from './UserSteyt'
-
+import App from './Homework/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />   
+    
    {/* <Figma2/> */}
-<Root/>
+{/* <Root/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

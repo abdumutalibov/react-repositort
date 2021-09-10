@@ -6,7 +6,7 @@ import { Card, Crkle, Get,
       Img3, 
       Img4, 
       Img5, 
-      Img6, 
+      Img6, Img7,
       Lets, Linee, Livin, Lucos, 
       Main, Our, Paset, Pasete, Pasete2, Spice, 
       Text1, Text10, Text11, Text12, Text13, Text2,
@@ -19,7 +19,7 @@ import Erow from './img/errow.png'
 import Pasha from './img/pasha.png'
 import Room from './img/room.png'
 import Room2 from './img/room2.png'
-
+import Rec from './img/Rec.png'
 export default class Navbar extends Component {
     render() {
         return (
@@ -96,17 +96,17 @@ export default class Navbar extends Component {
                    
                    <Pasete2></Pasete2>
                    
-                   <Livin>Project Livingroom</Livin>
-                   <Text12>A simple guide to create the perfect livingro-</Text12>
-                   <Text12> om for . Night Watc works beautifully in a wi- </Text12>
-                   <Text12>de gamut of arrangements. </Text12>
-                   <Img5><img src={Room}/></Img5>
-                   <Img6><img src={Room2}/></Img6>
-                   <Text13>Project workspace</Text13>
+                   
 
 
               </Hoow>
-              
+              <Livin>Project Livingroom</Livin>
+                   <Text12>A simple guide to create the perfect livingro-</Text12>
+                   <Text12> om for . Night Watc works beautifully in a wi- </Text12>
+                   <Text12>de gamut of arrangements. </Text12>
+                   <Img5><img src={Room}/><Img6><img src={Room2}/></Img6><img /><Img7><img src={Rec}/></Img7></Img5>
+                   
+                   <Text13>Project workspace</Text13>
                </Get>
                
             </div>

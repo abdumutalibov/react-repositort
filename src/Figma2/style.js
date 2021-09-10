@@ -369,8 +369,9 @@ color: #486958;
  padding-top: 35px;
  `
  export const Img6=styled.div`
- position:relative;
- top:-650px;
+ /* position:relative; */
+ margin-top:-170px;
+ margin-left:200px ;
  `
  export const Text13=styled.div` 
  
@@ -383,4 +384,8 @@ line-height: 60px;
 
 
 color: #58A9A5;
+ `
+ export const Img7=styled.div`
+ 
+ margin-left:200px ;
  `
