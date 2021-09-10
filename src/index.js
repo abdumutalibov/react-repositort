@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import Figma from './Figma/Sidebar'
 // import Figma2 from './Figma2/Navbar';
-import Root from './Figma2/Navbar';
+// import Root from './Figma2/Navbar';
+import Root from './Figma3/Root'
 // import App from './Table/App';
 // import Delta from './delta/app1'
 // import App from './Root'
@@ -14,12 +15,12 @@ import Root from './Figma2/Navbar';
 // import App from './Project'
 // import App from './Project1'
 // import App from './UserSteyt'
-import App from './Homework/index'
+// import App from './Homework/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />   
-    
+    <Root />   
+
    {/* <Figma2/> */}
 {/* <Root/> */}
   </React.StrictMode>,
