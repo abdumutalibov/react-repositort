@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import Figma from './Figma/Sidebar'
 // import Figma2 from './Figma2/Navbar';
-import Root from './Figma2/Navbar';
+// import Root from './Figma2/Navbar';
+import Root from './Figma3/Root'
 // import App from './Table/App';
 // import Delta from './delta/app1'
 // import App from './Root'
