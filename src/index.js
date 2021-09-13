@@ -15,14 +15,23 @@ import Root from './Figma3/Root'
 // import App from './Project'
 // import App from './Project1'
 // import App from './UserSteyt'
+
 import App from './PDP-project'
+
+// ReactDOM.render(
+  // <React.StrictMode>
+    // <App />
+// =======
+// import App from './Homework/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Root />   
+
+
    {/* <Figma2/> */}
-<Root/>
+{/* <Root/> */}
   </React.StrictMode>,
   document.getElementById('root')
-);
 
+);
