@@ -15,11 +15,11 @@ import Root from './Figma3/Root'
 // import App from './Project'
 // import App from './Project1'
 // import App from './UserSteyt'
-
+import App from './PDP-project'
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
    {/* <Figma2/> */}
 <Root/>
   </React.StrictMode>,
