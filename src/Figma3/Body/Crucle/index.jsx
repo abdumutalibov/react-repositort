@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Crucl, ImgCrucl, MainCrucl, TitleCrucl } from './style'
+import { Back, Crucl, ImgCrucl, MainCrucl, TitleCrucl } from './style'
 
 export default class index extends Component {
     render() {
@@ -12,6 +12,10 @@ export default class index extends Component {
                 <TitleCrucl>
                     {this.props.title}
                 </TitleCrucl>
+                <Back>
+                    {this.props.sty}
+                </Back>
+                
             </MainCrucl>
             
         )
