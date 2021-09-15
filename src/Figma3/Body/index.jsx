@@ -16,7 +16,7 @@ export default class index extends Component {
     render() {
         return (
             <MainCon>
-<BodyContainer>
+<BodyContainer >
       <Card title='Start' icon={Bir}/>
       <Card title='Drive' icon={rul}/>
       <Card title='Maintinance' icon={Mot}/>
@@ -49,6 +49,7 @@ color: '#000000'
 <Crucl title='tt' icons={caat}/>
 <Crucl title='tt' icons={rul}/>
 <Crucl title='tt' icons={rul}/>
+<Crucl title='tt' icons={rul}  />
 
 </Circle>
 

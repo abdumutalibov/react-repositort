@@ -14,8 +14,8 @@ opacity: 0.1;
 width: 60px;
 height: 60px;
 margin-right:3px;
-background-color:red;
-background-color:red;
+/* background-color:red;
+background-color:red; */
 `
 export const TitleCrucl = styled.div`
 font-family: Product Sans;
@@ -27,4 +27,7 @@ line-height: 17px;
 
 
 color: #838383;
+`
+export const Back=styled.style`
+
 `
