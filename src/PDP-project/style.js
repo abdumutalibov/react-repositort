@@ -83,5 +83,23 @@ export const Browse = styled.div`
 
   color: #3d3d3d;
   display: flex;
+  
   justify-content: center;
 `;
+export const Line =styled.div`
+display:flex;
+justify-content: center;
+margin: 20px 0 59px 0;
+`
+export const Line2=styled.div`
+width: 123px;
+height: 8px;
+display: flex;
+justify-content: center;
+align-items:center;
+/* flex-direction: column; */
+/* Blue */
+
+background: linear-gradient(90.26deg, #AA80FF 0.21%, rgba(160, 113, 255, 0.65) 97.38%);
+border-radius: 3px 3px 3px 3px;
+`

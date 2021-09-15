@@ -11,7 +11,7 @@ import gu from "./img/google.png";
 import ibn from "./img/ibm.png";
 import mi from "./img/microsoft.png";
 import mod from "./img/mode.png";
-import { Browse, Container, Container2, Main, Micro, Trust } from "./style";
+import { Browse, Container, Container2, Line, Line2, Main, Micro, Trust } from "./style";
 // import { Text1 } from './imgs/style'
 
 export default class index extends Component {
@@ -35,6 +35,7 @@ export default class index extends Component {
             <Textss text="" icon={mod} />
           </Micro>
           <Browse>Browse Online Course Categoryies</Browse>
+          <Line><Line2/></Line>
         </Container2>
       </Container>
     );
