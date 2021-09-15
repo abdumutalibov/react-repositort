@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Card from './Card'
 // import bosh from './img/Bosh.png'
 import bosh from "./img/Co.png";
 import Imgss from "./imgs";
@@ -36,8 +37,9 @@ export default class index extends Component {
           </Micro>
           <Browse>Browse Online Course Categoryies</Browse>
           <Line><Line2/></Line>
+          <Card title='das' icon={}/>
         </Container2>
       </Container>
-    );
+    )
   }
 }
