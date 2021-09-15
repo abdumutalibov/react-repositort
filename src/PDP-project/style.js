@@ -97,10 +97,18 @@ height: 8px;
 display: flex;
 justify-content: center;
 align-items:center;
+
 /* flex-direction: column; */
 /* Blue */
 
 background: linear-gradient(90.26deg, #AA80FF 0.21%, rgba(160, 113, 255, 0.65) 97.38%);
 border-radius: 3px 3px 3px 3px;
 `
-console.log('gagda');
+
+
+
+export const MainCard=styled.div`
+display: flex;
+justify-content: space-between;
+`
+

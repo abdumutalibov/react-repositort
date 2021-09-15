@@ -10,6 +10,7 @@ import rul from '../img/rul.png'
 import right from '../img/on.png'
 import left from '../img/chap.png'
 import car from '../img/Car.png'
+import caat from '../img/caticon.png'
 import { BodyContainer, Car, Circle, Infinit, Left, MainCar, MainCon, Right } from './style'
 export default class index extends Component {
     render() {
@@ -45,7 +46,7 @@ color: '#000000'
 <Right><img src={right}/></Right>
 
 <Circle>
-<Crucl title='tt' icons={rul}/>
+<Crucl title='tt' icons={caat}/>
 <Crucl title='tt' icons={rul}/>
 <Crucl title='tt' icons={rul}/>
 <Crucl title='tt' icons={rul}  />

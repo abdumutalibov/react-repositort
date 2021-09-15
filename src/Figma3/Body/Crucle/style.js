@@ -10,7 +10,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius:50%;
-opacity: 0.9;
+opacity: 0.1;
 width: 60px;
 height: 60px;
 margin-right:3px;
