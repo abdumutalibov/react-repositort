@@ -103,3 +103,4 @@ align-items:center;
 background: linear-gradient(90.26deg, #AA80FF 0.21%, rgba(160, 113, 255, 0.65) 97.38%);
 border-radius: 3px 3px 3px 3px;
 `
+console.log('gagda');
