@@ -12,7 +12,7 @@ import gu from "./img/google.png";
 import ibn from "./img/ibm.png";
 import mi from "./img/microsoft.png";
 import mod from "./img/mode.png";
-import { Browse, Container, Container2, Line, Line2, Main, Micro, Trust } from "./style";
+import { Browse, Container, Container2, Line, Line2, Main, MainCard, Micro, Trust } from "./style";
 // import { Text1 } from './imgs/style'
 
 export default class index extends Component {
@@ -37,7 +37,14 @@ export default class index extends Component {
           </Micro>
           <Browse>Browse Online Course Categoryies</Browse>
           <Line><Line2/></Line>
-          <Card title='das' icon={}/>
+          <MainCard>
+            <Card title='das' icon={mi}/>
+          <Card title='dassdsdsdsd' icon={mi}/>
+          <Card title='das' icon={mi}/>
+          <Card title='das' icon={mi}/>
+          <Card title='das' icon={mi}/>
+          </MainCard>
+          
         </Container2>
       </Container>
     )
